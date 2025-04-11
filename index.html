@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW 320i M Sport - Drive the Experience</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+  </style>
+</head>
+<body>
+  <div class="bg-overlay"></div>
+  <header class="header-bmw">
+    <div class="top-info">
+      <span>📞 +57 323 590 2681</span>
+      <span>📍 Popayán, Colombia</span>
+      <input type="text" placeholder="Buscar BMW..." aria-label="Buscar" />
+    </div>
+  
+    <nav class="navbar-bmw">
+      <div class="logo">
+        <img src="bmw-logo.svg" alt="BMW" />
+        <span class="model">BMW <strong>320i M Sport</strong></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href=\"#inicio\">Inicio</a></li>
+        <li><a href=\"#galeria\">Galería</a></li>
+        <li><a href=\"#detalles\">Specs</a></li>
+      </ul>
+      <a href=\"#contacto\" class=\"btn-cta\">Solicita tu prueba</a>
+    </nav>
+  </header>
+  
+  
+
+  <section class="hero gamer cinematic" id="inicio">
+    <audio id="engineSound" autoplay loop>
+      <source src="engine-soft.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  
+    <video autoplay muted loop playsinline class="hero-video-bg">
+      <source src="/assets/bwm.mp4" type="video/mp4" />
+      Tu navegador no soporta videos en HTML5.
+    </video>
+  
+    <div class="hero-overlay">
+      <div class="intro-console">
+        <span class="press-start">▶ PRESS START TO DRIVE</span>
+      </div>
+      <div class="hero-text">
+        <h2 class="glow-title">DRIVE IT LIKE A GAME</h2>
+        <p>Vive la potencia, precisión y estética de un BMW como si fuera un simulador. ¿Estás listo?</p>
+        <a href="#contacto" class="btn">Solicita tu prueba</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="gallery" id="galeria">
+    <h2 class="section-title">🚘 Entra al Garaje</h2>
+    <p class="subtitle">Explora cada ángulo del BMW M240i Coupé en su máxima expresión.</p>
+  
+    <div class="image-grid">
+      <div class="gallery-item">
+        <img src="/assets/frontal.png" alt="BMW Frontal" />
+        <div class="caption">Vista Frontal</div>
+      </div>
+      <div class="gallery-item">
+        <img src="/assets/interior.png" alt="BMW Interior" />
+        <div class="caption">Interior Deportivo</div>
+      </div>
+      <div class="gallery-item">
+        <img src="/assets/lateral.png" alt="BMW Lateral" />
+        <div class="caption">Perfil Aerodinámico</div>
+      </div>
+      <div class="gallery-item">
+        <img src="/assets/motor.png" alt="BMW Motor" />
+        <div class="caption">Motor TwinPower Turbo</div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="details futuristic" id="detalles">
+    <h2 class="section-title">⚙️ Performance & Specs</h2>
+  
+    <div class="specs-container">
+      <div class="spec-block">
+        <h3>Modelo</h3>
+        <p>BMW 320i M Sport</p>
+      </div>
+  
+      <div class="spec-block">
+        <h3>Motor</h3>
+        <p>2.0L TwinPower Turbo • 4 cilindros en línea</p>
+      </div>
+  
+      <div class="spec-block">
+        <h3>Potencia</h3>
+        <p>184 hp @ 5,000 rpm</p>
+      </div>
+  
+      <div class="spec-block">
+        <h3>Aceleración 0–100 km/h</h3>
+        <p>7.1 segundos</p>
+      </div>
+  
+      <div class="spec-block">
+        <h3>Transmisión</h3>
+        <p>Automática deportiva de 8 velocidades</p>
+      </div>
+  
+      <div class="spec-block">
+        <h3>Experiencia Premium</h3>
+        <ul class="extras-list">
+          <li>🎵 Sonido Harman Kardon envolvente</li>
+          <li>🧭 Navegador iDrive de última generación</li>
+          <li>🎥 Sensores 360° y cámara de reversa</li>
+          <li>🌤️ Techo panorámico eléctrico</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="contact cyber" id="contacto">
+    <h2 class="section-title">🧠 Activa tu Simulación de Manejo</h2>
+    <p class="subtitle">Completa los datos y nos pondremos en contacto para coordinar tu test drive del BMW M240i Coupé.</p>
+  
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <input type="text" placeholder="🕹️ Tu nombre " required />
+      </div>
+  
+      <div class="form-group">
+        <input type="email" placeholder="📧 Correo para confirmar cita" required />
+      </div>
+  
+      <div class="form-group">
+        <textarea placeholder="🗓️ Cuéntanos cuándo quieres conducirlo..."></textarea>
+      </div>
+  
+      <button type="submit" class="btn">🚀 Iniciar Simulación</button>
+    </form>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 BMW Experience. Game on. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
