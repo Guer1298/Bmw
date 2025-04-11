@@ -46,4 +46,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const offset = window.scrollY * 0.3;
     video.style.transform = `translateY(${offset}px)`;
   });
+
+    // Toggle menu for mobile
+    
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      document.querySelector(".nav-menu").classList.toggle("active");
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+    
+        const nombre = document.getElementById('nombre').value.trim();
+        const correo = document.getElementById('correo').value.trim();
+        const mensaje = document.getElementById('mensaje').value.trim();
+    
+        const texto = `👋 Hola, soy *${nombre}* y quiero agendar un test drive para el BMW 320i M Sport. 📧 Mi correo es: ${correo}. %0A🗓️ Detalles: ${mensaje || 'Sin mensaje adicional.'}`;
+    
+        const telefono = "573235902681"; // Tu número con código país (sin "+" ni espacios)
+        const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
+    
+        window.open(url, '_blank');
+
   
+
+
+    }    );
